@@ -1,0 +1,36 @@
+<div id="title-block">
+  <button><%= link_to "Create New Post", new_post_path %></button>
+  <p> Sudo Make Me A Blog </p>
+</div>
+
+<div class="container">
+  <div class="col-sm-10 col-sm-offset-1 col-xs-12 blog-content">
+    <div id="content-box">
+      <% @posts.each do |post| %>
+      <div class="col-xs-12">
+        <div class="text-center">
+          <h2><%= post.title %></h2>
+          <!-- <h6><%= post.created_at.strftime('%b %d, %Y') %></h6> -->
+          <h6><%= time_ago_in_words(post.created_at) %> ago </h6><br><br>
+          <!-- </div> -->
+
+          <div id="post-body">
+            <p><%= raw (post.body).truncate(275) %></p>
+          </div>
+          <div class="text-center">
+            <%= link_to "READ MORE", post_path(post) %>
+            <br><hr>
+          </div><br><br>
+
+          <br>
+          <!-- </div> -->
+          <% end %>
+          <div id="link">
+            <button type="button" class="btn btn-outline-info">
+              <%= link_to 'Previous Page', page: @page - 1 %></button> &nbsp;
+              <button type="button" class="btn btn-outline-info">
+                <%= link_to 'Next Page', page: @page + 1 %></button>
+              </div>
+            </div>
+          </div>
+        </div>

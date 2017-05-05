@@ -1,0 +1,90 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// ************** INDEX *****************
+
+div#post-body img {
+  text-align: center;
+  display: block;
+  max-width: 477px;
+  max-height: 400px;
+  margin: 0 auto;
+  padding-bottom: 1em;
+}
+
+
+div.text-center {
+  position: relative;
+  font-family: 'Quicksand', sans-serif;}
+
+.text-center h6 {
+  color: #337ab7;
+}
+
+div#title-block {
+  // background-color: lightgray;
+  background: #D3959B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #BFE6BA, #D3959B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #BFE6BA, #D3959B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  width: 100%;
+  margin-left: -1em;
+  margin-bottom: -0.8em;
+  padding-bottom: 5em;
+
+    p {
+      text-align: center;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 7em;
+      color: white;
+      margin-top: 0.3em;
+    }
+    button {
+      margin-top: 1em;
+      margin-left: 7em;
+      padding: 0.5em;
+      border-radius: 55px;
+      border: none;
+      background-color: #60a6c1;
+    }
+    a {
+      color: white;
+      font-weight: 200;
+      font-size: 13px;
+    }
+}
+
+.container {
+  border: solid gray .7px;
+  border-spacing: 1em;
+  margin: 0.7em;
+  border-top: white;
+}
+
+.btn {
+  border: none;
+  background-color: #60a6c1;
+  a {
+    color: white;
+  }
+}
+
+// ************** SHOW *****************
+
+#title {
+  margin-left: 8em;
+}
+
+#show-content {
+  display: block;
+  margin-left: 6em;
+  text-align: center;
+    img {
+      max-width: 700px;
+      max-height: 475px;
+    }
+}
+a {
+  text-align: center;
+}
